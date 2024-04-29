@@ -1,0 +1,76 @@
+@import url(./fonts.css);
+:root {
+    --Dark-Blue:#172339;
+    --Grey:#49566D;
+    --Cream:#F3EDE7;
+    --Cream-White:#FAF8F6;
+    --violet:#A060FF;
+    --ink:#CB30E3;
+    --orange:#FFA84E;
+    --ffamily:"Epilogue";
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+p {
+    font-family: var(--ffamily);
+}
+
+.primary-btn {
+    width: 256px;
+    height: 61px;
+    color:var(--Cream-White);
+    font-family: var(--ffamily);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 32px; /* 177.778% */
+    letter-spacing: -0.18px;
+    border-radius: 6px;
+    background: #172339;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.secondary-btn{
+    width: 256px;
+    height: 61px;
+    color:var(--Dark-Blue);
+    font-family: var(--ffamily);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 32px; /* 177.778% */
+    letter-spacing: -0.18px;
+    background: var(--Cream-White);
+    text-align: center;
+    padding-top: 15px;
+    border-radius: 6px;
+    border: 1px solid #172339;
+
+}
+
+.site-header-hero {
+}
+.container {
+}
+.site-header {
+}
+.site-header__logo {
+}
+.site-header__logo--image {
+}
+.all-btn {
+}
+.secondary-btn {
+}
