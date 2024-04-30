@@ -35,12 +35,17 @@ p {
     font-family: var(--ffamily);
     font-size: 18px;
     font-weight: 700;
-    line-height: 32px; /* 177.778% */
+    line-height: 32px; 
     letter-spacing: -0.18px;
     border-radius: 6px;
     background: #172339;
     text-align: center;
     padding-top: 15px;
+}
+.primary-btn:hover {
+    cursor: pointer;
+    border-radius: 6px;
+    background: linear-gradient(135deg, #A060FF, #CB30E3, #FFA84E );
 }
 
 .secondary-btn{
@@ -57,20 +62,125 @@ p {
     padding-top: 15px;
     border-radius: 6px;
     border: 1px solid #172339;
-
+    transition: .4s;
+}
+.secondary-btn:hover {
+    cursor: pointer;
+    border-radius: 6px;
+    border: 1px solid var(--Dark-Blue);
+    background: var(--Dark-Blue);
+    color: var(--Cream-White);
 }
 
 .site-header-hero {
+    padding-top: 50px;
+
 }
 .container {
-}
-.site-header {
+    max-width: 1100px;
+    width: 100%;
+    margin: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+
+
 }
 .site-header__logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-.site-header__logo--image {
+
+.site-hero {
+    margin-top: 67px;
+    display: flex;
+    padding-top: 185px;
+    justify-content: space-between;
+    position: relative;
+   
+   
 }
-.all-btn {
+.site-hero__business {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 128px;
+  
 }
-.secondary-btn {
+/* .site-hero__business::after {
+    content: url(../assets/image-hero-portrait.png);
+
+} */
+
+.site-hero__business--title {
+    max-width: 635px;
+    width: 100%;
+    color: #172339;
+    font-family: "Epilogue";
+    font-size: 72px;
+    font-weight: 400;    
+    letter-spacing: -1px;
+    margin-bottom: 40px;
+}
+.title-bold {
+    max-width: 635px;
+    width: 100%;
+    color: #172339;
+    font-family: "Epilogue";
+    font-size: 72px;
+    font-weight: 700;
+   
+    letter-spacing: -1px;
+   
+
+}
+.site-hero__bisiness--text {
+    max-width: 350px;
+    width: 100%;
+    color: var(--Grey);
+    font-family: "Epilogue";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px; 
+    letter-spacing: 0.1px;
+    padding-bottom: 52px;
+}
+
+/* .img-form {  
+    position: absolute;
+    left: 471px;
+    z-index: -1;
+} */
+.site-hero__information {     
+}
+.site-hero__information::before {
+    content: url(../assets/image-hero-portrait.png);
+    position: absolute;
+    top: 67px;
+    left: 475px;
+    z-index: -1;
+}
+.informatsion-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+
+}
+.information__number {
+    color: var(--Dark-Blue, #172339);
+    font-family: "Epilogue";
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    letter-spacing: -0.5px;
+ 
+}
+.information-description { 
+    color:var(--Grey);
+    font-family: "Epilogue";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 2.5px;
+   
+    
 }

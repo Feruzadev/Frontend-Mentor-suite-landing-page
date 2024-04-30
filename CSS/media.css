@@ -1,0 +1,23 @@
+@media (max-width: 768px) {
+    .site-hero {
+        margin-top: 80px;
+        flex-direction: column;
+    }
+    .site-hero__business--title {
+        font-size: 56px;
+        line-height: 64px;
+        letter-spacing: -0.778px;
+    }
+    .title-bold {
+        font-size: 56px;
+        line-height: 64px;
+        letter-spacing: -0.778px;
+    }
+    .site-hero__information::before {
+        left: 380px;
+    }
+    .site-hero__information {
+        display: flex;
+    }
+    
+}
