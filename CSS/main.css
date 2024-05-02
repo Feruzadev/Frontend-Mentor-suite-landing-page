@@ -30,7 +30,6 @@ p {
 
 .primary-btn {
     width: 256px;
-    height: 61px;
     color:var(--Cream-White);
     font-family: var(--ffamily);
     font-size: 18px;
@@ -40,7 +39,8 @@ p {
     border-radius: 6px;
     background: #172339;
     text-align: center;
-    padding-top: 15px;
+    padding: 15px 0;
+    transition: .4s;
 }
 .primary-btn:hover {
     cursor: pointer;
@@ -50,7 +50,6 @@ p {
 
 .secondary-btn{
     width: 256px;
-    height: 61px;
     color:var(--Dark-Blue);
     font-family: var(--ffamily);
     font-size: 18px;
@@ -59,7 +58,7 @@ p {
     letter-spacing: -0.18px;
     background: var(--Cream-White);
     text-align: center;
-    padding-top: 15px;
+    padding: 15px 0;
     border-radius: 6px;
     border: 1px solid #172339;
     transition: .4s;
@@ -77,13 +76,11 @@ p {
 
 }
 .container {
-    max-width: 1100px;
+    max-width: 1142px;
     width: 100%;
     margin: auto;
-    padding-left: 30px;
-    padding-right: 30px;
-
-
+    padding-left: 16px;
+    padding-right: 16px;
 }
 .site-header__logo {
     display: flex;
@@ -92,46 +89,40 @@ p {
 }
 
 .site-hero {
-    margin-top: 67px;
     display: flex;
-    padding-top: 185px;
     justify-content: space-between;
+    margin-top: 67px;
+    margin-bottom: 199px;
+   
+  
+}
+.site-hero-wraper {
+    display: flex;
     position: relative;
-   
-   
 }
 .site-hero__business {
     display: flex;
     flex-direction: column;
-    margin-bottom: 128px;
-  
+    margin-top: 106px;
 }
-/* .site-hero__business::after {
-    content: url(../assets/image-hero-portrait.png);
-
-} */
-
 .site-hero__business--title {
-    max-width: 635px;
-    width: 100%;
+    /* max-width: 635px;
+    width: 100%; */
     color: #172339;
     font-family: "Epilogue";
     font-size: 72px;
-    font-weight: 400;    
-    letter-spacing: -1px;
+    font-weight: 400;   
+    line-height: 78px; 
     margin-bottom: 40px;
 }
 .title-bold {
-    max-width: 635px;
-    width: 100%;
+    /* max-width: 635px;
+    width: 100%; */
     color: #172339;
     font-family: "Epilogue";
     font-size: 72px;
     font-weight: 700;
-   
-    letter-spacing: -1px;
-   
-
+    line-height: 78px;   
 }
 .site-hero__bisiness--text {
     max-width: 350px;
@@ -145,42 +136,150 @@ p {
     padding-bottom: 52px;
 }
 
-/* .img-form {  
+.site-hero__image {
+    max-width: 436px;
+    width: 100%;
+    height: 600px;
     position: absolute;
     left: 471px;
-    z-index: -1;
-} */
-.site-hero__information {     
-}
-.site-hero__information::before {
-    content: url(../assets/image-hero-portrait.png);
-    position: absolute;
-    top: 67px;
-    left: 475px;
+    top: 0;
     z-index: -1;
 }
-.informatsion-list {
+
+.informatsion-list {   
     display: flex;
     flex-direction: column;
-    row-gap: 24px;
+    row-gap: 63px;
+    margin-top: 106px;
 
 }
+.information-nav {
+    max-width: 190px;
+    width: 100%;
+}
 .information__number {
-    color: var(--Dark-Blue, #172339);
+    color: var(--Dark-Blue);
     font-family: "Epilogue";
     font-size: 48px;
     font-weight: 700;
     line-height: 56px;
     letter-spacing: -0.5px;
- 
 }
-.information-description { 
+.information-description {
     color:var(--Grey);
     font-family: "Epilogue";
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
     letter-spacing: 2.5px;
-   
+}
+
+/* site-main */
+
+.main-wraper {
+    height: 545px;
+    border-radius: 15px;
+    background: var(--Dark-Blue, #172339);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 153px;
+}
+.site-main__img {
+    max-width: 360px;
+    width: 100%;
+    height: 590px;
+    margin-top: -45px;
     
+
+   
+}
+.site-main-desc {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+}
+.site-main__title {
+    color: #FAF8F6;
+    font-family: "Epilogue";
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 56px;
+    letter-spacing: -0.5px;
+    }
+.site-main__title--works {
+    color: #FAF8F6;
+    font-family: "Epilogue";
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    letter-spacing: -0.5px;
+
+}
+.site-main__text {
+    max-width: 350px;
+    width: 100%;
+    color: var(--Cream);
+    font-family: "Epilogue";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 35px; 
+    letter-spacing: 0.1px;
+}
+.site-main__name {
+    color: 
+    var(--Cream-White);
+    font-family: "Epilogue";
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -0.18px;
+}
+.site-main__job {
+    color:var(--Cream);
+    font-family:"Epilogue";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 2.5px;
+}
+
+/* site-main */
+
+.site-footer {
+    background: var(--Cream);
+    
+}
+.container {
+}
+.site-footer__wrapper {
+
+    display: flex;
+    justify-content: space-between;
+    padding-top: 95px;
+    padding-bottom: 72px;
+    align-items: center;
+
+}
+.site-footer__logo {
+}
+.logo-image {
+}
+.site-footer__desc {
+    color: var(--Grey);
+    text-align: center;
+    font-family: "Epilogue";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 32px; 
+    letter-spacing: 0.083px;
+}
+.site-footer__icon {
+    display: flex;
+    column-gap: 25px;
+    cursor: pointer;
+    
+}
+.site-footer__icon:active{
+    opacity: 0.5;
 }
